@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Explorer App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+      .footer {
+        height: 50px;
+        padding: 5px;
+        margin-top: 20px;
+      }
+      </style>
+  </head>
+
+  <body>
+    <header class="container-fluid bg-primary header">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="row">
+            <h4 class="text-white col-md-4">Project Explorer</h4>
+    
+            <div class="col-md-8">
+              <form class="row form-inline justify-content-between" name="searchForm">
+                <input type="text" name="" class="form-control col-md-6" placeholder="Search Projects">
+                <input type="submit" class="btn btn-outline-light col-md-3" value="Search">
+                <a href="#" class="btn btn-primary text-white">Submit</a>
+              </form>
+            </div>
+            <!-- <h2>One Stop Database For Academic Projects</h2> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+    
+          <nav class="navbar justify-content-end">
+    
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+    
+          </nav>
+    
+        </div>
+    </header>
+    <main class="container">
+   <div class="row p-3">
+      <h2>Project 1</h2>
+      </div>
+      <div class="row bg-light align-items-center p-3">
+        <div class="col-md-3">Created By<br>Udoka Shadrach</div>
+        <div class="col-md-3">Date Created<br>16/02/2021</div>
+        <div class="col-md-3">Last Updated<br>16/02/2021</div>
+        <div class="col-md-3"><a href="#" class="btn btn-primary float-right">View Project</a></div>
+    
+      </div>
+      <div class="row align-items-end" style="height: 70px;">
+      <div class="col-md-6 border-bottom">
+      <h6 class="float-left"> Edit Project</h6>
+      </div>
+      <div class="col-md-6 border-bottom">
+        <h6 class="float-left">Manage Project</h6>
+      </div>
+      </div>
+      <!-- 
+          The <br /> tags are used temporily to achieve a vertical layout i.e to the make
+          the label appear on top of the inputs rather than on the same line i.e horizontally.
+          This will be fixed later with CSS.
+       -->
+       
+      <form name="editProject">
+        <div class="row pt-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="form-label" for="name">Project Name:</label>
+              <input class="form-control" type="text" name="name" placeholder="Project 1"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+          <input class="form-control" type="file" name="projectFile" />
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="form-group">
+            <label class="form-label" for="abstract">Project Abstract:</label>
+            <textarea rows="10" class="form-control" name="abstract"></textarea></div>
+          </div>
+          <div class="col-md-6">
+          <div class="card">
+           <h6 class="card-title bg-light p-3">Project files</h6>
+            <div class="card-text p-3"> <p class="text-center">No file uploaded yet</p></div>
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+        
+          <div class="col-md-6">
+        <div class="form-group">
+      <label class="form-label" for="authors">Authors:</label>
+      <input class="form-control" type="text" name="authors" />
+
+        </div>
+          </div>
+          <div class="col-md-6">
+        
+          </div>
+        </div>
+        <div class="row">
+        
+          <div class="col-md-6">
+        <div class="form-group">
+      <label class="form-label" for="tags">Tag(s):</label>
+      <input class="form-control" type="text" name="tags" />
+
+        </div>
+          </div>
+          <div class="col-md-6">
+        
+          </div>
+        </div>
+        
+        <input class="btn btn-primary" type="submit" value="Save"/>
+      </form>
+    </main>
+    <div class="container">
+    
+      <footer class="row bg-light align-items-center justify-content-end footer">
+        <div><span class="text-secondary"> Project Explorer &copy; 2020 - </span>Edconnect </div>
+      </footer>
+    </div>
+  </body>
+</html>

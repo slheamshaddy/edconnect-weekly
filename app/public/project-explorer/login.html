@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Explorer App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+      .footer{
+        height:50px;
+        padding:5px;
+      }
+      .form-col{
+        padding:50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container-fluid bg-primary header">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="row">
+            <h4 class="text-white col-md-4">Project Explorer</h4>
+    
+            <div class="col-md-8">
+              <form class="row form-inline justify-content-between" name="searchForm">
+                <input type="text" name="" class="form-control col-md-6" placeholder="Search Projects">
+                <input type="submit" class="btn btn-outline-light col-md-3" value="Search">
+                <a href="#" class="btn btn-primary text-white">Submit</a>
+              </form>
+            </div>
+            <!-- <h2>One Stop Database For Academic Projects</h2> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+    
+          <nav class="navbar justify-content-end">
+    
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+    
+          </nav>
+    
+        </div>
+    </header>
+    <div class="container">
+      <div class="row align-items-center"><div class="col-md-3"></div>
+        <div class="col-md-6 form-col">
+      <h1 class="form-row">Login</h1>
+      <!-- 
+          The <br /> tags are used temporily to achieve a vertical layout i.e to the make
+          the label appear on top of the inputs rather than on the same line i.e horizontally.
+          This will be fixed later with CSS.
+       -->
+      <form name="login" class="">
+        <div class="form-row form-group">
+          <label class="form-label" for="email">Email address:</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter Email">
+        </div>
+        <div class="form-row form-group">
+          <label class="form-label" for="pwd">Password:</label>
+          <input type="password" class="form-control" name="password" placeholder="password">
+        </div>
+        <input type="submit" class="btn btn-md btn-primary form-row"/>
+      </form>
+       </div>
+       <div class="col-md-3"></div>
+    </div>
+    <footer class="row bg-light align-items-center justify-content-end footer">
+      <div><span class="text-secondary"> Project Explorer &copy; 2020 - </span>Edconnect </div>
+    </footer>
+    </div>
+  </body>
+</html>
